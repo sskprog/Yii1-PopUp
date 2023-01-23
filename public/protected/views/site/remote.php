@@ -40,7 +40,6 @@ $str =  <<<JS
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         if (data.show) {
             setTimeout(() => {
             createPopup(data.body);

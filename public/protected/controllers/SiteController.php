@@ -125,7 +125,6 @@ class SiteController extends Controller
 			Yii::app()->end();
 
 		} elseif ($_SERVER['REQUEST_METHOD'] === 'GET') {
-			//var_dump($popup); die;
 			return $this->render('remote', ['popup' => $popup]);
 		}
 		 else return false;
